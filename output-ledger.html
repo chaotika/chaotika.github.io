@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+          table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          table th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background: #fff;
+          }
+          .amount-table-cell {
+            text-align: right;
+          }
+          .amount-negative {
+            color: #ff0000;
+          }
+          #accounts,#transactions,.account {
+            display: none;
+          }
+          #accounts:target,#transactions:target,.account:target {
+            display:block;
+          }
+        </style>
+<script></script>
+</head>
+<body>
+<div>
+<a href="#accounts">Accounts</a> 
+          <a href="#transactions">Transactions</a>
+</div>
+<div id="accounts">
+<h1>Accounts</h1>
+<table>
+<thead><tr>
+<th>Account</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="padding-left:0em;"><a href="#account-0000560b7c5885f0"></a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:1em;"><a href="#account-0000560b7c593e30">Assets</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-9324</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c594210">Checking</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-4124</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-4124</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c59ba60">Savings</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5200</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5200</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:1em;"><a href="#account-0000560b7c5949d0">Equity</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c594dd0">Opening Balances</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:1em;"><a href="#account-0000560b7c5956e0">Expenses</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">12174</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c59d7e0">Auto</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">11000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">11000</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c59e470">Books</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">40</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">40</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c5995b0">Escrow</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c595b10">Food</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">334</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:3em;"><a href="#account-0000560b7c595f40">Groceries</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">334</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">334</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c598b20">Interest</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">500</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:3em;"><a href="#account-0000560b7c598f50">Mortgage</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">500</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:1em;"><a href="#account-0000560b7c59ac70">Income</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-2030</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c59b0a0">Salary</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-2000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-2000</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c5a07d0">Sales</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-30</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-30</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:1em;"><a href="#account-0000560b7c597c30">Liabilities</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">180</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c59eb80">MasterCard</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-20</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:2em;"><a href="#account-0000560b7c598060">Mortgage</a></td>
+<td class="amount-table-cell"></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+</tr>
+<tr>
+<td style="padding-left:3em;"><a href="#account-0000560b7c598490">Principal</a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="transactions">
+<h1>All Transactions</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Account</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="3">2010/12/01</td>
+<td rowspan="3">Checking balance</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">1000</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594dd0">
+            Equity:Opening Balances
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="8">2010/12/20</td>
+<td rowspan="8">Organic Co-op</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">75</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">112.5</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">150</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">187.5</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">225</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-225</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="5">2010/12/28</td>
+<td rowspan="5">Acme Mortgage</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c598490">
+            Liabilities:Mortgage:Principal
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c598f50">
+            Expenses:Interest:Mortgage
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">700</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c5995b0">
+            Expenses:Escrow
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">1000</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/02</td>
+<td rowspan="3">Grocery Store</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">65</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">65</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-65</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/05</td>
+<td rowspan="3">Employer</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">2000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">2000</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59b0a0">
+            Income:Salary
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-2000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/14</td>
+<td rowspan="3">Bank</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59ba60">
+            Assets:Savings
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/19</td>
+<td rowspan="3">Grocery Store</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c595f40">
+            Expenses:Food:Groceries
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">44</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">44</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-44</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/25</td>
+<td rowspan="3">Bank</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59ba60">
+            Assets:Savings
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/25</td>
+<td rowspan="3">Tom's Used Cars</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59d7e0">
+            Expenses:Auto
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/01/27</td>
+<td rowspan="3">Book Store</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59e470">
+            Expenses:Books
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59eb80">
+            Liabilities:MasterCard
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/04/25</td>
+<td rowspan="3">Tom's Used Cars</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59d7e0">
+            Expenses:Auto
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/04/27</td>
+<td rowspan="3">Bookstore</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c59e470">
+            Expenses:Books
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="3">2011/12/01</td>
+<td rowspan="3">Sale</td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c594210">
+            Assets:Checking
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">30</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">30</span></span></td>
+</tr>
+<tr>
+<td><a href="#account-0000560b7c5a07d0">
+            Income:Sales
+          </a></td>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-30</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c5885f0">
+<h1>Account: </h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c593e30">
+<h1>Account: Assets</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c594210">
+<h1>Account: Assets:Checking</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2010/12/01</td>
+<td rowspan="2">Checking balance</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">1000</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2010/12/20</td>
+<td rowspan="2">Organic Co-op</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-225</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2010/12/28</td>
+<td rowspan="2">Acme Mortgage</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/02</td>
+<td rowspan="2">Grocery Store</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-65</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/05</td>
+<td rowspan="2">Employer</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">2000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">2000</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/14</td>
+<td rowspan="2">Bank</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/19</td>
+<td rowspan="2">Grocery Store</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-44</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/25</td>
+<td rowspan="2">Bank</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/25</td>
+<td rowspan="2">Tom's Used Cars</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/04/25</td>
+<td rowspan="2">Tom's Used Cars</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/04/27</td>
+<td rowspan="2">Bookstore</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/12/01</td>
+<td rowspan="2">Sale</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">30</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">30</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c59ba60">
+<h1>Account: Assets:Savings</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2011/01/14</td>
+<td rowspan="2">Bank</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/25</td>
+<td rowspan="2">Bank</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c5949d0">
+<h1>Account: Equity</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c594dd0">
+<h1>Account: Equity:Opening Balances</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2010/12/01</td>
+<td rowspan="2">Checking balance</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-1000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c5956e0">
+<h1>Account: Expenses</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c59d7e0">
+<h1>Account: Expenses:Auto</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2011/01/25</td>
+<td rowspan="2">Tom's Used Cars</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/04/25</td>
+<td rowspan="2">Tom's Used Cars</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">5500</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c59e470">
+<h1>Account: Expenses:Books</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2011/01/27</td>
+<td rowspan="2">Book Store</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/04/27</td>
+<td rowspan="2">Bookstore</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">20</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c5995b0">
+<h1>Account: Expenses:Escrow</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2010/12/28</td>
+<td rowspan="2">Acme Mortgage</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">300</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">1000</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c595b10">
+<h1>Account: Expenses:Food</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c595f40">
+<h1>Account: Expenses:Food:Groceries</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="7">2010/12/20</td>
+<td rowspan="7">Organic Co-op</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">75</span></span></td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">112.5</span></span></td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">150</span></span></td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">187.5</span></span></td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">37.5</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">225</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/02</td>
+<td rowspan="2">Grocery Store</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">65</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">65</span></span></td>
+</tr>
+<tr>
+<td rowspan="2">2011/01/19</td>
+<td rowspan="2">Grocery Store</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">44</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">44</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c598b20">
+<h1>Account: Expenses:Interest</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c598f50">
+<h1>Account: Expenses:Interest:Mortgage</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2010/12/28</td>
+<td rowspan="2">Acme Mortgage</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">500</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">700</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c59ac70">
+<h1>Account: Income</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c59b0a0">
+<h1>Account: Income:Salary</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2011/01/05</td>
+<td rowspan="2">Employer</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-2000</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c5a07d0">
+<h1>Account: Income:Sales</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2011/12/01</td>
+<td rowspan="2">Sale</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-30</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c597c30">
+<h1>Account: Liabilities</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c59eb80">
+<h1>Account: Liabilities:MasterCard</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2011/01/27</td>
+<td rowspan="2">Book Store</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-negative"><span class="symbol">$</span> <span class="quantity">-20</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">0</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c598060">
+<h1>Account: Liabilities:Mortgage</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="account" id="account-0000560b7c598490">
+<h1>Account: Liabilities:Mortgage:Principal</h1>
+<table>
+<thead><tr>
+<th>Date</th>
+<th>Payee</th>
+<th>Amount</th>
+<th>Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">2010/12/28</td>
+<td rowspan="2">Acme Mortgage</td>
+</tr>
+<tr>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+<td class="amount-table-cell"><span class="amount
+        amount-positive"><span class="symbol">$</span> <span class="quantity">200</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
